@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.13.0/pivot.min.css">
+    <title>Evidence Based Map Portal in Vue</title>
+  </head>
+  <body>
+    <div id="example-table">
+        <pivot-table></pivot-table>
+    </div>
+    <script src="dist/build.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/pivottable@2.13.0"></script>
+    <script src="https://unpkg.com/vue"></script>
+
+<script>
+  Vue.component('pivot-table', {
+    template: '<div></div>',
+    mounted: function() {
+      $(this.$el).pivotUI(
+          [
+              {color: "blue", shape: "circle"},
+              {color: "red", shape: "triangle"}
+          ],
+          {
+              rows: ["color"],
+              cols: ["shape"]
+          }
+      );
+    }
+  })
+  // create a root instance
+  new Vue({
+    el: '#example-table'
+  })
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+
+        export default function() {
+        var data = {"children":[{"name":"Africa","children":[{"name":"Eastern Africa","id":"geo1","colname":"subregion"},{"name":"Middle Africa","id":"geo2","colname":"subregion"},{"name":"Northern Africa","id":"geo3","colname":"subregion"},{"name":"Southern Africa","id":"geo4","colname":"subregion"},{"name":"Western Africa","id":"geo5","colname":"subregion"}],"id":"geo6","colname":"region"},{"name":"Asia","children":[{"name":"Eastern Asia","id":"geo11","colname":"subregion"},{"name":"South-Eastern Asia","id":"geo12","colname":"subregion"},{"name":"Southern Asia","id":"geo13","colname":"subregion"},{"name":"Western Asia","id":"geo14","colname":"subregion"}],"id":"geo15","colname":"region"},{"name":"Europe","children":[{"name":"Northern Europe","id":"geo19","colname":"subregion"},{"name":"Southern Europe","id":"geo20","colname":"subregion"}],"id":"geo21","colname":"region"},{"name":"Latin America","children":[{"name":"Caribbean","id":"geo23","colname":"subregion"},{"name":"Central America","id":"geo24","colname":"subregion"},{"name":"South America","id":"geo25","colname":"subregion"}],"id":"geo26","colname":"region"},{"name":"NA","children":[{"name":"NA","id":"geo29","colname":"subregion"},{"name":"NA","id":"geo30","colname":"subregion"}],"id":"geo31","colname":"region"}],"name":"root"};
+        data.name = 'Geo';
+        data.id = 'geo0'
+        return data;
+        }
+        

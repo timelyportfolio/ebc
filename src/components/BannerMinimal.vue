@@ -26,7 +26,7 @@
           </button>
           <div class="dropdown-menu text-center" aria-labelledby="dropdownUnderstandButton">
             <router-link to="/about/method" class="dropdown-item">Evidence Synthesis</router-link>
-            <a class="dropdown-item" href="#">Portal & Tool</a>
+            <router-link to="/about/tool" class="dropdown-item">Portal &amp; Tool</router-link>
           </div>
         </div>
       </div>

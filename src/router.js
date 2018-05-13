@@ -44,7 +44,7 @@ var routes = [
         },
         {
           path: 'tool',
-          component: AboutTool,
+          component: AboutTool/*,
           children: [
             {
               path: '',
@@ -62,7 +62,7 @@ var routes = [
               path: 'glossary',
               component: AboutToolGlossary
             }
-          ]
+          ]*/
         },
         {
           path: 'group',

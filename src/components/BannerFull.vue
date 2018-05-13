@@ -26,7 +26,7 @@
           </button>
           <div class="dropdown-menu text-center" aria-labelledby="dropdownUnderstandButton">
             <router-link to="/about/method" class="dropdown-item">Evidence Synthesis</router-link>
-            <a class="dropdown-item" href="#">Portal & Tool</a>
+            <router-link to="/about/tool" class="dropdown-item">Portal &amp; Tool</router-link>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
             EXPLORE THE DATA
           </button>
           <div class="dropdown-menu text-center" aria-labelledby="dropdownExploreButton">
-            <router-link to="/explore/wellbeing" class="dropdown-item">Conservation &<br/>Human Well-Being</router-link>
+            <router-link to="/explore/wellbeing" class="dropdown-item">Conservation &amp;<br/>Human Well-Being</router-link>
             <router-link to="/explore/wildlife" class="dropdown-item">Effectiveness of international<br/>wildlife trade programs</router-link>
             <router-link to="/explore/profor" class="dropdown-item">Contribution of forests<br/>to poverty alleviation</router-link>
           </div>
@@ -44,7 +44,7 @@
       </div>
       <div class="col-sm-3 text-center">
         <a class="btn btn-secondary" href="#" role="button">
-          UPDATES & NEWS
+          UPDATES &amp; NEWS
         </a>
       </div>
     </div>

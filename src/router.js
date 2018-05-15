@@ -6,7 +6,6 @@ import AboutGroup from './components/AboutGroup.vue'
 import AboutTool from './components/AboutTool.vue'
 import AboutToolData from './components/AboutToolData.vue'
 import AboutToolTool from './components/AboutToolTool.vue'
-import AboutToolGlossary from './components/AboutToolGlossary.vue'
 import Contact from './components/Contact.vue'
 import Explore from './components/Explore.vue'
 import ExploreHumanWellBeing from './components/ExploreHumanWellBeing.vue'
@@ -14,11 +13,13 @@ import AboutHumanWellBeing from './components/AboutHumanWellBeing.vue'
 import WellbeingVis from './components/Vis.vue'
 import WellbeingDataTable from './components/DataTable.vue'
 import WellbeingDownload from './components/Download.vue'
+import WellbeingGlossary from './components/AboutToolGlossary.vue'
 import ExploreProgramForests from './profor/ExploreProgramForests.vue'
 import ProforVis from './profor/components/Vis.vue'
 import ProforDataTable from './profor/components/DataTable.vue'
 import ProforDownload from './profor/components/Download.vue'
 import AboutProfor from './profor/components/AboutProfor.vue'
+import ProforGlossary from './profor/components/Glossary.vue'
 import ExploreWildlife from './wildlife/components/ExploreWildlife.vue'
 import Research from './components/Research.vue'
 import ResearchOngoing from './components/ResearchOngoing.vue'
@@ -100,6 +101,10 @@ var routes = [
             {
               path: 'about',
               component: AboutHumanWellBeing
+            },
+            {
+              path: 'glossary',
+              component: WellbeingGlossary
             }
           ]
         },
@@ -130,6 +135,10 @@ var routes = [
             {
               path: 'about',
               component: AboutProfor
+            },
+            {
+              path: 'glossary',
+              component: ProforGlossary
             }
           ]
         }

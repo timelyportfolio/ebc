@@ -29,7 +29,10 @@
 
         <h3>How to Use the Portal</h3>
         <p>Short video tutorial on using the EBC data portal (video link)</p>
-
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center alternate-row" style="padding-bottom: 50px;">
+      <div class="col-10">
         <h3>FAQs</h3>
         <h5>I am looking for a specific action or outcome, how do I find out what category that falls into?</h5>
         <p>
@@ -37,7 +40,7 @@
         </p>
         <h5>Where do I filter data and explore it? Why are there so many different options?</h5>
         <p>
-          This site is constantly in development and we are refining it to make searching for and exploring data as functional and intuitive as possible. As well, while Shiny is a fantastic method for visualizing data, it can be difficult to incorporate multiple elements that it is not designed for. Hence, there are different tabs for exploring data. We encourage you to watch the how-to video on how to explore, filter, and download data.
+          This site is constantly in development and we are refining it to make searching for and exploring data as functional and intuitive as possible.  As we add datasets, we will assign a new tab for exploring the data as consistently as possible. We encourage you to watch the video on how to explore, filter, and download data.
         </p>
         <p>
           In general, options for exploration are located in the <span style="color:#006666; font-weight:bold;">EXPLORE</span> section. Within this section, in the <span style="color:#006666; font-weight:bold;">VISUALIZATION</span> tab, you can filter data from an individual evidence synthesis by geography, intervention/action type, outcome type, study design, and habitat. This data is displayed in a number of visualizations displaying the resulting number of unique articles. Here you can view summaries of different variables, explore the full data, and visualize spatially on both choropleth and interactive maps. You can also view the data table behind this map by clicking on the <span style="color:#006666; font-weight:bold;">TABLE</span> tab.
@@ -46,7 +49,10 @@
         <p>
           You can read more about ongoing work to build this evidence base and conduct in-depth syntheses on some of these linkages in the <span style="color:#006666; font-weight:bold;">RESEARCH</span> tab.
         </p>
-
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center" style="padding-bottom: 50px; margin-top: 2em;">
+      <div class="col-10">
         <h3>Feedback</h3>
         <p>
           As this tool is designed to help users find and explore usable data, feedback would be
@@ -60,7 +66,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center justify-content-center alternate-row" style="padding-bottom: 50px;">
+    <div class="row align-items-center justify-content-center alternate-row">
       <div class="col-10">
         <h3>Acknowledgments</h3>
   
@@ -88,6 +94,7 @@
   .row.alternate-row {
     background-color:#383838;
     color: white;
+    padding-bottom:50px;
   }
   .row.alternate-row h3 {
     color:#eec919;

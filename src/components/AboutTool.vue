@@ -47,7 +47,7 @@
         </p>
         <h5>Are there other efforts to expand from this evidence map or on other topics?</h5>
         <p>
-          You can read more about ongoing work to build this evidence base and conduct in-depth syntheses on some of these linkages in the <span style="color:#006666; font-weight:bold;">RESEARCH</span> tab.
+          You can read more about ongoing work to build this evidence base and conduct in-depth syntheses on some of these linkages in the <span style="color:#006666; font-weight:bold;">UPDATE &amp; NEWS </span> tab.
         </p>
       </div>
     </div>

@@ -314,7 +314,26 @@
                     },
                     {"value": "lightgray"}
                   ],
-                  "zindex": {"value": 0}
+                  "zindex": {"value": 0},
+                  "tooltip": {
+                    "signal": "if(isString(datum.region),{'Region': datum.region, 'Subregion': datum.subregion, 'Country': datum.country, 'Size': datum.size}, null)"
+                  }
+                    /*{
+                      field: 'region',
+                      title: 'Region'
+                    },
+                    {
+                      field: 'subregion',
+                      title: 'Subregion'
+                    },
+                    {
+                      field: 'country',
+                      title: 'Country'
+                    },
+                    {
+                      field: 'size',
+                      title: 'ArticleCount'
+                    }*/
                 },
                 "hover": {
                   "strokeWidth": {"signal": "+borderWidth + 1"},

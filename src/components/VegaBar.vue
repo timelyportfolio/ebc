@@ -49,7 +49,7 @@ export default {
             "axis": {
               "labelFont": "inherit",
               "titleFont": "inherit",
-              "gridDash": [5,2]
+              "titlePadding": 60
             },
             "legend": {
               "labelFont": "inherit",

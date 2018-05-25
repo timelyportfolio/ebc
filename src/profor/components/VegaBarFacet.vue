@@ -57,13 +57,19 @@ export default {
                   title: null
                 }
               },
-              "color": {"field": this.facet, "type": "nominal", "legend": null}
+              "color": {"field": this.facet, "type": "nominal", "legend": null},
+              "tooltip": [
+                {"field": this.facet, "type": "ordinal"},
+                {"field": this.y, "type": "nominal"},
+                {"field": this.x, "type": "quantitative"}
+              ]
             }
           },
           "config": {
             "axis": {
               "labelFont": "inherit",
-              "titleFont": "inherit"
+              "titleFont": "inherit",
+              "titlePadding": 60
             },
             "legend": {
               "labelFont": "inherit",
@@ -77,7 +83,10 @@ export default {
     },
     spec: function() {
       if(this.specvl) {
-        return vl.compile(this.specvl).spec
+        var spec = vl.compile(this.specvl).spec;
+        spec.marks[1].axes[0].encode = {labels: {interactive: true}};
+        spec.marks[1].axes[0].encode.labels.update = {"tooltip": {"signal": "datum.label"}};
+        return spec;
       }
       return null
     }

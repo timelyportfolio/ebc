@@ -49,7 +49,8 @@ export default {
           "config": {
             "axis": {
               "labelFont": "inherit",
-              "titleFont": "inherit"
+              "titleFont": "inherit",
+              "titlePadding": 60
             },
             "legend": {
               "labelFont": "inherit",

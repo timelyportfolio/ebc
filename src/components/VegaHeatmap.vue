@@ -44,7 +44,12 @@ export default {
               "legend": {"orient": "top"},
               "scale": {"scheme":"bluegreen"},
               "zero": true
-            }
+            },
+            "tooltip": [
+              {"field": this.x, "type": "ordinal"},
+              {"field": this.y, "type": "ordinal"},
+              {"field": this.z, "type": "quantitative"}
+            ]
           },
           "config": {
             "axis": {
@@ -64,7 +69,12 @@ export default {
     },
     spec: function() {
       if(this.specvl) {
-        return vl.compile(this.specvl).spec
+        var spec = vl.compile(this.specvl).spec;
+        spec.axes[0].encode.labels.interactive = true;
+        spec.axes[0].encode.labels.update.tooltip = {"signal": "datum.label"};
+        spec.axes[1].encode = {labels: {interactive: true}};
+        spec.axes[1].encode.labels.update = {"tooltip": {"signal": "datum.label"}};
+        return spec;
       }
       return null
     }

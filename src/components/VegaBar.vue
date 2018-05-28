@@ -43,7 +43,11 @@ export default {
               "axis": {
                 "title": null
               }
-            }
+            },
+            "tooltip": [
+              {"field": this.y, "type": "ordinal"},
+              {"field": this.x, "type": "quantitative"}
+            ]
           },
           "config": {
             "axis": {
@@ -63,7 +67,10 @@ export default {
     },
     spec: function() {
       if(this.specvl) {
-        return vl.compile(this.specvl).spec
+        var spec = vl.compile(this.specvl).spec;
+        spec.axes[2].encode = {labels: {interactive: true}};
+        spec.axes[2].encode.labels.update = {"tooltip": {"signal": "datum.label"}};
+        return spec;
       }
       return null
     }

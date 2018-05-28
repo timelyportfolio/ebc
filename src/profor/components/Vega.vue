@@ -98,8 +98,9 @@ export default {
 
       // should I view.finalize before re-render
       // if no spec finalize and destroy view
-      if(this.view && this.view.finalize) {
-        this.view.finalize()
+      if(this.view && typeof(this.view.finalize) !== "undefined") {
+        this.view.finalize();
+        this.view = null;
       }
 
       if(spec) {

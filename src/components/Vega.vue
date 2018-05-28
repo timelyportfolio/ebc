@@ -12,7 +12,7 @@
 
 <script>
 import * as vega from 'vega';
-import * as vegaTooltip from 'vega-tooltip';
+import vegaTooltip from 'vega-tooltip';
 import {select} from 'd3-selection';
 
 export default {
@@ -74,7 +74,7 @@ export default {
     this.view = this.createView(this.spec);
   },
   beforeDestroy: function() {
-    if(this.view) {
+    if(this.view && typeof(this.view.finalize) !== "undefined") {
       this.view.finalize()
       this.view = null
     }
@@ -117,14 +117,15 @@ export default {
 
         view.run();
 
+        if(this.useTooltip) {
+          vegaTooltip(view);
+          //vegaTooltip.vega(view, this.tooltipOptions);
+        }
+
         if(this.useViewbox) {
           select(this.$el).select('div.vega-chart svg')
             .style('width', '100%')
             .style('height', '100%')
-        }
-
-        if(this.useTooltip) {
-          vegaTooltip.vega(view, this.tooltipOptions);
         }
 
         return view;

@@ -1,7 +1,13 @@
 <template>
   <div class="row" style="width:100%;">
     <collapse v-model="activeNames" class="col col-12">
-      <collapse-item title = "Articles By Country" name="1">
+      <collapse-item name="1">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Articles By Country</span>
+          <p>
+            This shows the number of unique articles that document a link between an intervention and an outcome for each country studied.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-12">
             <VegaGeomap
@@ -13,7 +19,13 @@
           </div>
         </div>
       </collapse-item>
-      <collapse-item title="Intervention by Outcome Heatmap" name="2">
+      <collapse-item name="2">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Intervention by Outcome Heatmap</span>
+          <p>
+            This shows the number of unique articles that document specific intersections of an intervention and an outcome. Because articles can study more than one intervention or outcome type, articles may occur in more than linkage cell. Darker colors indicate greater volume of articles. This map shows quantity of evidence but does not illustrate direction nor magnitude of impact.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-8">
             <VegaHeatmap
@@ -26,7 +38,13 @@
           </div>
         </div>
       </collapse-item>
-      <collapse-item title="Intervention by Region" name="3">
+      <collapse-item name="3">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Intervention by Region</span>
+          <p>
+            This shows the number of unique articles that examine different intervention types in different geographic regions. Because articles can study more than one intervention and region, articles can appear more than once within a single graph panel.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-12">
             <VegaBarFacet
@@ -39,7 +57,13 @@
           </div>
         </div>
       </collapse-item>
-      <collapse-item title="Habitat by Region" name="4">
+      <collapse-item name="4">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Habitat by Region</span>
+          <p>
+            This shows the number of unique articles that examine different habitat types in different geographic regions. Because articles can study more than one habitat and region, articles can appear more than once within a single graph panel.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-12">
             <VegaBarFacet
@@ -52,7 +76,13 @@
           </div>
         </div>
       </collapse-item>
-      <collapse-item title="Study Type by Comparator" name="5">
+      <collapse-item name="5">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Study Type by Comparator</span>
+          <p>
+            This graph shows the types of comparators used in different study designs over the evidence base. Because articles can use more than one type of comparator, articles can appear more than once within a single graph panel.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-12">
             <VegaBarFacet
@@ -65,7 +95,13 @@
           </div>
         </div>
       </collapse-item>
-      <collapse-item title="Intervention Combinations" name="6">
+      <collapse-item name="6">
+        <template slot="title">
+          <span style="font-weight:bold; font-size:1.15rem;">Intervention Combinations</span>
+          <p>
+            Interventions are often complex and include actions that fall into multiple intervention categories. This graph shows which intervention types commonly co-occur within a studied program or comparative study.
+          </p>
+        </template>
         <div class="row align-items-start" style="margin-top:2em;">
           <div class="col col-md-6">
             <VegaBar

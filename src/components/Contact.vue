@@ -35,6 +35,15 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  beforeRouteEnter (to, from, next) {
+    next(vm => vm.$emit("minimizeBanner", true))
+  }
+}
+</script>
+
 <style scoped>
   .row.alternate-row a {
     color: white;

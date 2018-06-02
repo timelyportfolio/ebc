@@ -611,6 +611,12 @@
     border: none;
   }
 
+  .el-collapse-item__header {
+    padding-top: 1em;
+    height: auto;
+    line-height: 2em;
+  }
+
   .el-collapse-item__wrap{
     background-color: #fff;
   }

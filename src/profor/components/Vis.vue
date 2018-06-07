@@ -189,7 +189,7 @@
         return {        
           "$schema": "https://vega.github.io/schema/vega/v3.0.json",
           "width": 500,
-          "height": 450,
+          "height": 375,
           "autosize": "fit",
           "background": "ded",
           "config": {
@@ -277,7 +277,8 @@
               "scale": {"signal": "scale"},
               "rotate": [{"signal": "rotateX"}, 0, 0],
               "center": [0, {"signal": "centerY"}],
-              "translate": [{"signal": "tx"}, {"signal": "ty"}]
+              "translate": [{"signal": "tx"}, {"signal": "ty"}],
+              "clipExtent": [[0,10],[650,340]]
             }
           ],
 

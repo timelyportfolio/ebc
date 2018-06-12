@@ -33,6 +33,10 @@
     <p>
       For metadata on data columns, please refer to the codebook from Cheng et al. 2016.
     </p>
+
+    <p>
+      This work is supported by the World Bank’s Program for Forests (link: <a href="http://www.profor.info" rel="nofollow">www.profor.info</a>). Please contact Sofia Ahlroth (<a href="mailto:sahlroth@worldbank.org">sahlroth@worldbank.org</a>) and Emilie Perge (<a href="mailto:eperge@worldbank.org">eperge@worldbank.org</a>) for more information.
+    </p>
   </div>
 </template>
 

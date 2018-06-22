@@ -56,24 +56,6 @@
         </div>
       </div>
     </div>
-    <div class="jumbotron-fluid jumbo-sponsor row align-items-start justify-content-center" style="padding-bottom:20px;">
-      <div class="col-12">
-        <div class="row justify-content-center">
-          <h4 class="text-center" style="margin-bottom:-5px; color:#eec919;">OUR PARTNERS</h4>
-        </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-4">
-            <img src="../assets/ci_logo.png" style="width:80%;">
-          </div>
-          <div class="col-4">
-            <img src="../assets/snap-acronym-color-white.png" style="width:80%;">
-          </div>
-          <div class="col-2">
-            <img src="../assets/profor.png" style="width:80%;">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -129,14 +111,6 @@ export default {
     padding-top: 0px;
     border-radius: 0px;
     background-color: rgb(131,146,143);
-  }
-
-  .jumbo-sponsor {
-    background-color: #484446;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding-top: 0px;
-    border-radius: 0px;
   }
 
 </style>

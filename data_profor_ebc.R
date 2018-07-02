@@ -43,6 +43,21 @@ get_first <- function(row) {
   head(row,1)
 }
 
+# fix duplicate comparators
+dat[which(dat$Comps.type == "sites"),"Comps.type"] <- "Sites"
+dat[which(is.na(dat$Comps.type)),"Comps.type"] <- "Unspecified"
+dat[which(dat$Comps.type == ""),"Comps.type"] <- "Unspecified"
+dat[which(dat$Comps.type == "presence/absence of intervention"),"Comps.type"] <- "Presence/Absence of intervention"
+dat[which(dat$Comps.type == "Presence/absence of intervention"),"Comps.type"] <- "Presence/Absence of intervention"
+dat[which(dat$Comps.type == "user groups"),"Comps.type"] <- "User groups"
+dat[which(dat$Comps.type == "socio-economic"),"Comps.type"] <- "Socio-economic groups/levels"
+dat[which(dat$Comps.type == "socio-economic groups"),"Comps.type"] <- "Socio-economic groups/levels"
+dat[which(dat$Comps.type == "projects"),"Comps.type"] <- "Projects"
+dat[which(dat$Comps.type == "project"),"Comps.type"] <- "Projects"
+dat[which(dat$Comps.type == "cultural/ethnic groups"),"Comps.type"] <- "Cultural/ethnic groups"
+dat[which(dat$Comps.type == "demographic groups"),"Comps.type"] <- "Demographic groups"
+
+
 dat %>%
   group_by(aid) %>%
   # match profor col names
@@ -104,7 +119,7 @@ dat %>%
     .
   } %>%
   jsonlite::toJSON(dataframe="rows", na="string") %>%
-  cat(file="../../profor2_ebc/static/data_profor.json")
+  cat(file="../../ebc/static/data.json")
 
 
 
@@ -141,7 +156,7 @@ unique(dat[,c("region","subregion")]) %>%
         "
         ,d3r::d3_nest(., value_cols = "id")
       ),
-      file="../../profor2_ebc/static/geofilters.js"
+      file="../../ebc/src/geofilters.js"
     )
   }
 
@@ -348,7 +363,7 @@ export default function() {
 "
   ,jsonlite::toJSON(., dataframe="rows")
       ),
-file="../../profor2_ebc/src/compfilters.js"
+file="../../ebc/src/compfilters.js"
     )
   }
 

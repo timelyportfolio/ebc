@@ -340,15 +340,15 @@ data_frame(comp=unique(dat[,c("Comps.type")])) %>%
   mutate(colname="comparator") %>%
   select(name, code, id, colname) %>%
   filter(!is.na(code)) %>%
-  bind_rows(
-    data.frame(
-      name = "NA",
-      code = "NA",
-      id = paste0("comparator",nrow(.) + 1),
-      colname = "comparator",
-      stringsAsFactors = FALSE
-    )
-  ) %>%
+  #bind_rows(
+  #  data.frame(
+  #    name = "NA",
+  #    code = "NA",
+  #    id = paste0("comparator",nrow(.) + 1),
+  #    colname = "comparator",
+  #    stringsAsFactors = FALSE
+  #  )
+  #) %>%
   {
     cat(
       sprintf(

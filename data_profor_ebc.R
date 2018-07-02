@@ -124,24 +124,25 @@ dat %>%
 
 
 unique(dat[,c("region","subregion")]) %>%
-{
-  bind_rows(
-    data_frame(
-      region = c("NA","NA"),
-      subregion = c(NA,"NA")
-    ),
-    .
-  ) 
-} %>%
-{
-  bind_rows(
-    data_frame(
-      region = .$region
-    ),
-    .
-  )
-} %>%
+  filter(!(is.na(region) & is.na(subregion))) %>%
+  {
+    bind_rows(
+      data_frame(
+        region = .$region
+      ),
+      .
+    )
+  } %>%
   arrange(region, subregion) %>%
+  {
+    bind_rows(
+      .,
+      data_frame(
+        region = c("NA","NA"),
+        subregion = c(NA,"NA")
+      )
+    ) 
+  } %>%
   mutate(id = paste0("geo",1:n())) %>%  
   {  
     cat(

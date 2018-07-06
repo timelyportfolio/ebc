@@ -7,8 +7,8 @@
           <span style="color:#006699">
             <strong>ABOUT</strong>
           </span>
+          for more information)
         </em>
-        for more information)
       </p>
       <hr>
     </div>
@@ -20,8 +20,8 @@
               <strong>Intervention types</strong>
             </h4>
             <p>
-              We use the 
-              <a href="http://cmp-openstandards.org/using-os/tools/actions-taxonomy/">IUCN-Conservation Measures Partnership standardized typology</a>
+              We used the  
+              <a href="http://documents.worldbank.org/curated/en/315121527791764064/pdf/WPS8462.pdf">PRIME Framework</a>
                 for conservation actions/intervention types.
             </p>
             <div class="form-group">
@@ -56,11 +56,9 @@
               <strong>Outcomes</strong>
             </h4>
             <p>
-              The outcome categories were synthesized from a number of sources including 
-              <a href="http://www.mdpi.com/2071-1050/5/3/997">Leisher et al. 2013</a>
-              , 
-              <a href="http://www.conservationgateway.org/ConservationPractices/PeopleConservation/SocialScience/Pages/strengthening-social-impacts.aspx">Wongbusarakum et al. 2014</a>
-              , and Masuda et al. 2015
+              We used the 
+              <a href="http://surveys.worldbank.org/lsms/survey-methods">Living Standards Measurement Study (LSMS)</a>
+              to categorize poverty outcomes.
             </p>
             <div class="form-group">
               <label class="control-label" for="outcome_def">Outcome:</label>
@@ -131,10 +129,10 @@
             <h4 align="center" style="color:#006699">
               <strong>Forest types</strong>
             </h4>
-            <p>
+            <!--p>
               We used the World Wildlife Fund ecoregion 
               <a href="http://www.worldwildlife.org/biomes">definitions.</a>
-            </p>
+            </p-->
             <div class="form-group">
               <label class="control-label" for="study_def">Forest types</label>
               <div>
@@ -170,9 +168,9 @@
               <strong>Study type/Comparator</strong>
             </h4>
             <p>
-              We use the 
-              <a href="http://cmp-openstandards.org/using-os/tools/actions-taxonomy/">IUCN-Conservation Measures Partnership standardized typology</a>
-                for study type and comparator.
+              We used the criteria set in 
+              <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/ev.298">Margoluis et al. 2009</a>
+                to categorize study type and comparator.
             </p>
             <div class="form-group">
               <label class="control-label" for="biome_def">Study type/Comparator</label>

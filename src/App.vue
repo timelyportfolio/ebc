@@ -56,7 +56,7 @@
         ></router-view>
       </keep-alive>
     </div>
-    <div class="jumbotron-fluid jumbo-sponsor row align-items-start justify-content-center" style="padding-bottom:20px;">
+    <div class="jumbotron-fluid jumbo-sponsor row align-items-start justify-content-center">
       <div class="col-12">
         <div class="row justify-content-center">
           <h4 class="text-center" style="margin-bottom:-5px; color:#eec919;">OUR PARTNERS</h4>
@@ -166,7 +166,8 @@ export default {
   .jumbo-sponsor {
     background-color: #484446;
     margin-top: 100px;
-    padding-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 0px;
   }
 </style>

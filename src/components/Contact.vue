@@ -11,7 +11,7 @@
           For more information about the Evidence for Nature and People Data Portal and/or
           the Science for Nature and People Partnership (SNAPP) Evidence Based Conservation Working Group,
           please contact Samantha Cheng (<a href="mailto:samantha.cheng@asu.edu">samantha.cheng@asu.edu</a>)
-          or Madeleine McKinnon (<a href="mailto:madeleinem@vulcan.com">madeleinem@vulcan.com</a>).
+          or Madeleine McKinnon (<a href="mailto:mckinnon.madeleine@gmail.com">mckinnon.madeleine@gmail.com</a>).
         </p>
   
         <p>

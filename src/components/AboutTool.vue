@@ -28,10 +28,18 @@
         </p>
 
         <h3>How to Use the Portal</h3>
-        <p>Short video tutorial on using the EBC data portal (video link)</p>
+        <p>Short video tutorial on using the EBC data portal</p>
+        <div align="center">
+          <div id="howto">
+            <div class="video-responsive">
+              <iframe src="https://www.youtube.com/embed/EhietKtarlU" height="360" width="640" scrolling="no" allowfullscreen="yes">
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row align-items-center justify-content-center alternate-row" style="padding-bottom: 50px;">
+    <div class="row align-items-center justify-content-center alternate-row" style="margin-top: 50px; padding-bottom: 50px;">
       <div class="col-10">
         <h3>FAQs</h3>
         <h5>I am looking for a specific action or outcome, how do I find out what category that falls into?</h5>

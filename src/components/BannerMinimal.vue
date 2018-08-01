@@ -43,9 +43,9 @@
         </div>
       </div>
       <div class="col-sm-3 text-center">
-        <a class="btn btn-secondary" href="#" role="button">
-          UPDATES & NEWS
-        </a>
+        <router-link to="/updates" class="btn btn-secondary" role="button">
+          UPDATES &amp; NEWS
+        </router-link>
       </div>
     </div>
   </div>

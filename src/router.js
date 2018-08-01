@@ -23,7 +23,8 @@ import ProforGlossary from './profor/components/Glossary.vue'
 import ExploreWildlife from './wildlife/components/ExploreWildlife.vue'
 import Research from './components/Research.vue'
 import ResearchOngoing from './components/ResearchOngoing.vue'
-import News from './components/News.vue'
+//import News from './components/News.vue'
+import Updates from './components/Updates.vue'
 import Register from './components/Registration.vue'
 
 // 1. Define route components.
@@ -152,7 +153,7 @@ var routes = [
         }
       ]
   },
-  { path: '/news', component: News },
+  { path: '/updates', component: Updates },
   { path: '/register', component: Register}
 ]
 

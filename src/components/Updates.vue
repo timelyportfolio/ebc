@@ -9,7 +9,10 @@
 
         <div class="col-10">
           <div class="row post" v-for="(entry, i) in posts">
-            <h4>{{entry.gsx$title.$t}}</h4>
+            <h4>
+              {{entry.gsx$title.$t}}<br/>
+              <span style="font-size: 0.8em;">{{entry.gsx$date.$t}}</span>
+            </h4>
             <div class="content" v-html="entry.gsx$body.$t"></div>
           </div>
         </div>
